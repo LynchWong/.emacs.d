@@ -20,6 +20,10 @@
  ;; If there is more than one, they won't work right.
  )
 
+(exec-path-from-shell-copy-env "GOPATH")
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 ;; 行数
 ;;(global-linum-mode t)
 
@@ -31,7 +35,7 @@
     (load-theme 'sanityinc-solarized-dark t)
   )
 
-(setenv "GOPATH" "/Users/Lynch/Go")
+;;(setenv "GOPATH" "/Users/Lynch/Go")
 
 (add-to-list 'exec-path "/Users/Lynch/Go/bin")
 
