@@ -31,9 +31,9 @@
     (load-theme 'sanityinc-solarized-dark t)
   )
 
-(setenv "GOPATH" "/Users/Lynch/Go")
+(setenv "GOPATH" "/Users/huangou/Go")
 
-(add-to-list 'exec-path "/Users/Lynch/Go/bin")
+(add-to-list 'exec-path "/Users/huangou/Go/bin")
 
 (defun go-mode-setup ()
  (setq compile-command "go build -v && go test -v && go vet")
