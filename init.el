@@ -20,6 +20,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; org-mode 自动换行
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
 (exec-path-from-shell-copy-env "GOPATH")
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
